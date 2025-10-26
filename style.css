@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bangers&family=Bungee&family=Cookie&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Luckiest+Guy&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nerko+One&family=New+Amsterdam&family=Permanent+Marker&family=Stardos+Stencil:wght@400;700&family=Wallpoet&display=swap');
+
+* {
+    margin: 0 auto;
+}
+
+.header{
+    margin: 0;
+    height: 100vh;
+    background-image: url(img/фон1.avif); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.header_box{
+    display: flex;
+}
+
+.Tripo_games_box {
+box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6));
+background-color: rgb(255, 80, 65);
+border-radius: 0px 0px 10px 10px;
+width: 166px;
+height: 59px;
+margin-left: 80px;
+display: flex;
+justify-content: center; 
+align-items: center;
+
+} 
+
+.Tripo_games{
+font-size: 30px;
+color: #fff;
+font-family: 'Abril Fatface', sans-serif;
+justify-content: center;
+}
+
+.header_buttons{
+    line-height: 60px;
+}
+
+.header_button {
+    height: 60px;
+    color: rgb(39, 36, 67, 1);
+    shd: 0.00px 1.00px 4px 0px rgba(0, 0, 0, 0.6); 
+    margin: -2px;
+    border: 0;
+    font-size: 16px;
+}
+
+.main{
+    width: 118px;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.main:hover{
+    background-color: rgb(255, 93, 79);
+    color: #fff;
+    transition: .5s ease;
+}
+
+.game{
+    width: 96px;
+ 
+}
+
+.game:hover{
+    background-color: rgb(255, 80, 65);
+    color: #fff;
+    transition: .5s ease;
+}
+
+.Career{
+    width: 120px;
+}
+
+.Career:hover{
+    background-color: rgb(255, 80, 65);
+    color: #fff;
+    transition: .5s ease;
+}
+
+.AboutUs{
+    width: 100px;
+}
+
+.AboutUs:hover{
+    background-color: rgb(255, 80, 65);
+    color: #fff;
+    transition: .5s ease;
+}
+
+.contact{
+    width: 115px;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.contact:hover{
+    background-color: rgb(255, 80, 65);
+    color: #fff;
+     transition: .5s ease;
+}
+
+.header_maintext{
+    line-height: 1.2em;
+    font-size: 80px;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+.header_text{
+    line-height: 1.2em;
+    font-size: 24px;
+    margin-left: 80px;
+}
+
+.main_buttons {
+  position: absolute;
+  top: 80%; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 10; 
+}
+
+.button_kipon,
+.button_robotrix,
+.button_treasureBox {
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  color: #fff;
+  border: 0;
+  border-radius: 15px;
+  width: 236px;
+  height: 313px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(218, 57, 43, 0.8));
+  transition: transform 0.5s ease;
+  padding-top: 200px;
+}
+
+.button_kipon::before,
+.button_robotrix::before,
+.button_treasureBox::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 1s ease;
+  z-index: 0;
+}
+
+.button_kipon::before {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(218, 57, 43, 0.8)), url('img/7.png');
+}
+
+.button_robotrix::before {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(218, 57, 43, 0.8)), url('img/8.png');
+}
+
+.button_treasureBox::before {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(218, 57, 43, 0.8)), url('img/9.png');
+}
+
+.button_robotrix,
+.button_treasureBox {
+  margin-left: 70px;
+}
+
+.button_kipon h2,
+.button_kipon p,
+.button_robotrix h2,
+.button_robotrix p,
+.button_treasureBox h2,
+.button_treasureBox p {
+  position: relative;
+  z-index: 1;
+  margin-left: 30px;
+  transition: opacity 0.3s ease;
+}
+
+.button_kipon:hover::before,
+.button_robotrix:hover::before,
+.button_treasureBox:hover::before {
+  transform: scale(1.15);
+}
+
+.button_kipon:hover h2,
+.button_kipon:hover p,
+.button_robotrix:hover h2,
+.button_robotrix:hover p,
+.button_treasureBox:hover h2,
+.button_treasureBox:hover p {
+  opacity: 0;
+}
+
+.button_kipon:hover,
+.button_robotrix:hover,
+.button_treasureBox:hover {
+  transform: scale(1.02);
+}
+
+.main_games_buttons {
+  margin-left: 30px;
+}
+
+.Games {
+  font-size: 16px;
+}
