@@ -44,7 +44,7 @@ justify-content: center;
 .header_button {
     height: 60px;
     color: rgb(39, 36, 67, 1);
-    shd: 0.00px 1.00px 4px 0px rgba(0, 0, 0, 0.6); 
+    sdw: 0.00px 1.00px 4px 0px rgba(0, 0, 0, 0.6); 
     margin: -2px;
     border: 0;
     font-size: 16px;
@@ -212,4 +212,100 @@ justify-content: center;
 
 .Games {
   font-size: 16px;
+}
+
+.main_texts{
+    text-align: center;
+margin-top: 350px;
+}
+
+.main_text{
+    font-size: 20px;
+}
+
+.main_thekond_text {
+width: 711px;
+max-width: 100%; 
+line-height: 3em;
+overflow-wrap: break-word; 
+font-size: 30px;
+font-family: 'Abril Fatface', sans-serif;
+}
+
+.main_third_text {
+width: 711.7px;
+max-width: 100%; 
+line-height: 1.5em;
+overflow-wrap: break-word; 
+font-family: 'Abril Fatface', sans-serif;
+font-size: 14px;
+margin-top: 35px;
+}
+
+.button_another{
+    width: 142px  ;
+    height: 50px;
+    background-color: #da392b;
+    border:0 ;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.8s ease;
+    margin-top: 35px;
+}
+
+.button_another:hover{
+    width: 142px ;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10px;
+    color: #000;
+    font-size: 17px;
+}
+
+.main_img {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.img_wrap {
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden; /* чтобы не вылез градиент */
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.img_wrap:hover {
+  transform: scale(1.02);
+}
+
+.img_wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(218,57,43,0.4));
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.img_wrap:hover::after {
+  opacity: 1; /* при наведении появляется градиент */
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+  border-radius: 20px;
+}
+
+.main_img2{
+  margin-top: -200px;
+  margin-left: 200px;
+  position: relative; 
+  z-index: 1; 
 }
