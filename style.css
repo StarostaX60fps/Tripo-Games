@@ -4,6 +4,10 @@
     margin: 0 auto;
 }
 
+body {
+  background-color: rgba(246, 244, 240, 1);
+}
+
 .header{
     margin: 0;
     height: 100vh;
@@ -50,12 +54,12 @@ justify-content: center;
     font-size: 16px;
 }
 
-.main{
+.game_main{
     width: 118px;
     border-radius: 0px 0px 0px 10px;
 }
 
-.main:hover{
+.game_main:hover{
     background-color: rgb(255, 93, 79);
     color: #fff;
     transition: .5s ease;
@@ -223,7 +227,7 @@ margin-top: 350px;
     font-size: 20px;
 }
 
-.main_thekond_text {
+.main_second_text {
 width: 711px;
 max-width: 100%; 
 line-height: 3em;
@@ -309,3 +313,24 @@ margin-top: 35px;
   position: relative; 
   z-index: 1; 
 }
+
+.games_texts{
+text-align: center;
+margin-top: 150px;
+}
+
+.Our_games{
+font-family: 'Abril Fatface', sans-serif;
+font-size: 50px;
+}
+
+.game_text{
+width: 711px;
+max-width: 100%; 
+line-height: 1.7em;
+overflow-wrap: break-word; 
+font-size: 18px;
+font-family: 'Abril Fatface', sans-serif;
+margin-top: 15px;
+}
+
