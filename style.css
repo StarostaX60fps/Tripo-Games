@@ -9,8 +9,8 @@ body {
 }
 
 .header {
-  margin-top: -100px;
-  height: 120vh;
+  margin: 0;
+  height: 100vh;
   background-image: url(img/1.avif);
   background-size: cover;
   background-position: center;
@@ -18,42 +18,7 @@ body {
 }
 
 .header_box {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   display: flex;
-  align-items: center;
-  transition: transform 0.4s ease;
-  z-index: 999;
-}
-
-.header_box.hide {
-  transform: translateY(-100%);
-}
-
-.header_buttons {
-  display: flex;
-  margin-left: auto;
-  margin-right: 80px;
-}
-
-.header_button {
-  height: 60px;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  color: rgb(39, 36, 67);
-}
-
-.header_texts {
-  margin-bottom: 100px;
-}
-
-/* Push the header text block down by 100px as requested */
-.header_texts {
-    margin-top: 100px;
 }
 
 .Tripo_games_box {
@@ -76,10 +41,21 @@ body {
   justify-content: center;
 }
 
+.header_buttons {
+  line-height: 60px;
+}
+
+.header_button {
+  height: 60px;
+  color: rgb(39, 36, 67, 1);
+  margin: -2px;
+  border: 0;
+  font-size: 16px;
+}
+
 .game_main {
   width: 118px;
   border-radius: 0px 0px 0px 10px;
-  background-color: #fff;
 }
 
 .game_main:hover {
@@ -90,7 +66,7 @@ body {
 
 .game {
   width: 96px;
-  background-color: #fff;
+
 }
 
 .game:hover {
@@ -101,7 +77,6 @@ body {
 
 .Career {
   width: 120px;
-  background-color: #fff;
 }
 
 .Career:hover {
@@ -112,7 +87,6 @@ body {
 
 .AboutUs {
   width: 100px;
-  background-color: #fff;
 }
 
 .AboutUs:hover {
@@ -124,7 +98,6 @@ body {
 .contact {
   width: 115px;
   border-radius: 0px 0px 10px 0px;
-  background-color: #fff;
 }
 
 .contact:hover {
@@ -148,7 +121,7 @@ body {
 
 .main_buttons {
   position: absolute;
-  top: 95%;
+  top: 80%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -398,7 +371,7 @@ body {
   margin-right: 50px;
   margin-left: 50px;
   text-align: left;
-  width: 280px;
+  width: 280Fpx;
   max-width: 100%;
   line-height: 1.5em;
 }
@@ -487,8 +460,43 @@ body {
 
 .main_Kipon_Robotrix {
   display: flex;
+  margin-top: 100px;
 }
 
 .main_Treasure_img {
   display: flex;
+  margin-top: 450px;
+}
+
+.main_Robotrix_box {
+  margin-left: 100px;
+}
+
+.main_Treasure_box {
+  margin-left: 130px;
+}
+
+.main_Treasure_box_img2 {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.main_bg {
+  margin: 0;
+  height: 165vh;
+  background-image: url(img/c837a6_1cf50738638a41d680ed4dc3db5e5492~mv2.avif);
+  background-repeat: no-repeat;
+}
+
+.vacancy{
+  margin-top: 350px;
+  height: 100vh;
+  background-image: url(img/загружено.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.vacancy_text_title_button{
+  
 }
