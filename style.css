@@ -1,132 +1,159 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bangers&family=Bungee&family=Cookie&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Luckiest+Guy&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nerko+One&family=New+Amsterdam&family=Permanent+Marker&family=Stardos+Stencil:wght@400;700&family=Wallpoet&display=swap');
 
 * {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 body {
   background-color: rgba(246, 244, 240, 1);
 }
 
-.header{
-    margin: 0;
-    height: 100vh;
-    background-image: url(img/1.avif); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+.header {
+  margin-top: -100px;
+  height: 120vh;
+  background-image: url(img/1.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.header_box{
-    display: flex;
+.header_box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transition: transform 0.4s ease;
+  z-index: 999;
 }
 
-.Tripo_games_box {
-box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6));
-background-color: rgb(255, 80, 65);
-border-radius: 0px 0px 10px 10px;
-width: 166px;
-height: 59px;
-margin-left: 80px;
-display: flex;
-justify-content: center; 
-align-items: center;
-
-} 
-
-.Tripo_games{
-font-size: 30px;
-color: #fff;
-font-family: 'Abril Fatface', sans-serif;
-justify-content: center;
+.header_box.hide {
+  transform: translateY(-100%);
 }
 
-.header_buttons{
-    line-height: 60px;
+.header_buttons {
+  display: flex;
+  margin-left: auto;
+  margin-right: 80px;
 }
 
 .header_button {
-    height: 60px;
-    color: rgb(39, 36, 67, 1);
-    margin: -2px;
-    border: 0;
-    font-size: 16px;
+  height: 60px;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  color: rgb(39, 36, 67);
 }
 
-.game_main{
-    width: 118px;
-    border-radius: 0px 0px 0px 10px;
+.header_texts {
+  margin-bottom: 100px;
 }
 
-.game_main:hover{
-    background-color: rgb(255, 93, 79);
-    color: #fff;
-    transition: .5s ease;
-}
-
-.game{
-    width: 96px;
- 
-}
-
-.game:hover{
-    background-color: rgb(255, 80, 65);
-    color: #fff;
-    transition: .5s ease;
-}
-
-.Career{
-    width: 120px;
-}
-
-.Career:hover{
-    background-color: rgb(255, 80, 65);
-    color: #fff;
-    transition: .5s ease;
-}
-
-.AboutUs{
-    width: 100px;
-}
-
-.AboutUs:hover{
-    background-color: rgb(255, 80, 65);
-    color: #fff;
-    transition: .5s ease;
-}
-
-.contact{
-    width: 115px;
-    border-radius: 0px 0px 10px 0px;
-}
-
-.contact:hover{
-    background-color: rgb(255, 80, 65);
-    color: #fff;
-     transition: .5s ease;
-}
-
-.header_maintext{
-    line-height: 1.2em;
-    font-size: 80px;
-    margin-left: 80px;
+/* Push the header text block down by 100px as requested */
+.header_texts {
     margin-top: 100px;
 }
 
-.header_text{
-    line-height: 1.2em;
-    font-size: 24px;
-    margin-left: 80px;
+.Tripo_games_box {
+  box-shadow: var(--shd, 0 1px 4px rgba(0, 0, 0, .6));
+  background-color: rgb(255, 80, 65);
+  border-radius: 0px 0px 10px 10px;
+  width: 166px;
+  height: 59px;
+  margin-left: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Tripo_games {
+  font-size: 30px;
+  color: #fff;
+  font-family: 'Abril Fatface', sans-serif;
+  justify-content: center;
+}
+
+.game_main {
+  width: 118px;
+  border-radius: 0px 0px 0px 10px;
+  background-color: #fff;
+}
+
+.game_main:hover {
+  background-color: rgb(255, 93, 79);
+  color: #fff;
+  transition: .5s ease;
+}
+
+.game {
+  width: 96px;
+  background-color: #fff;
+}
+
+.game:hover {
+  background-color: rgb(255, 80, 65);
+  color: #fff;
+  transition: .5s ease;
+}
+
+.Career {
+  width: 120px;
+  background-color: #fff;
+}
+
+.Career:hover {
+  background-color: rgb(255, 80, 65);
+  color: #fff;
+  transition: .5s ease;
+}
+
+.AboutUs {
+  width: 100px;
+  background-color: #fff;
+}
+
+.AboutUs:hover {
+  background-color: rgb(255, 80, 65);
+  color: #fff;
+  transition: .5s ease;
+}
+
+.contact {
+  width: 115px;
+  border-radius: 0px 0px 10px 0px;
+  background-color: #fff;
+}
+
+.contact:hover {
+  background-color: rgb(255, 80, 65);
+  color: #fff;
+  transition: .5s ease;
+}
+
+.header_maintext {
+  line-height: 1.2em;
+  font-size: 80px;
+  margin-left: 80px;
+  margin-top: 100px;
+}
+
+.header_text {
+  line-height: 1.2em;
+  font-size: 24px;
+  margin-left: 80px;
 }
 
 .main_buttons {
   position: absolute;
-  top: 80%; 
+  top: 95%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  z-index: 10; 
+  z-index: 10;
 }
 
 .button_kipon,
@@ -217,54 +244,54 @@ justify-content: center;
   font-size: 16px;
 }
 
-.main_texts{
-    text-align: center;
-margin-top: 350px;
+.main_texts {
+  text-align: center;
+  margin-top: 350px;
 }
 
-.main_text{
-    font-size: 20px;
+.main_text {
+  font-size: 20px;
 }
 
 .main_second_text {
-width: 711px;
-max-width: 100%; 
-line-height: 3em;
-overflow-wrap: break-word; 
-font-size: 30px;
-font-family: 'Abril Fatface', sans-serif;
+  width: 711px;
+  max-width: 100%;
+  line-height: 3em;
+  overflow-wrap: break-word;
+  font-size: 30px;
+  font-family: 'Abril Fatface', sans-serif;
 }
 
 .main_third_text {
-width: 711.7px;
-max-width: 100%; 
-line-height: 1.5em;
-overflow-wrap: break-word; 
-font-family: 'Abril Fatface', sans-serif;
-font-size: 14px;
-margin-top: 35px;
+  width: 711.7px;
+  max-width: 100%;
+  line-height: 1.5em;
+  overflow-wrap: break-word;
+  font-family: 'Abril Fatface', sans-serif;
+  font-size: 14px;
+  margin-top: 35px;
 }
 
-.button_another{
-    width: 142px  ;
-    height: 50px;
-    background-color: #da392b;
-    border:0 ;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 16px;
-    transition: all 0.8s ease;
-    margin-top: 35px;
+.button_another {
+  width: 142px;
+  height: 50px;
+  background-color: #da392b;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.8s ease;
+  margin-top: 35px;
 }
 
-.button_another:hover{
-    width: 142px ;
-    height: 50px;
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 10px;
-    color: #000;
-    font-size: 17px;
+.button_another:hover {
+  width: 142px;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  color: #000;
+  font-size: 17px;
 }
 
 .main_img {
@@ -275,7 +302,8 @@ margin-top: 35px;
 .img_wrap {
   display: inline-block;
   border-radius: 20px;
-  overflow: hidden; /* чтобы не вылез градиент */
+  overflow: hidden;
+  /* чтобы не вылез градиент */
   position: relative;
   transition: transform 0.5s ease;
 }
@@ -289,13 +317,14 @@ margin-top: 35px;
   position: absolute;
   inset: 0;
   border-radius: 20px;
-  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(218,57,43,0.4));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(218, 57, 43, 0.4));
   opacity: 0;
   transition: opacity 0.5s ease;
 }
 
 .img_wrap:hover::after {
-  opacity: 1; /* при наведении появляется градиент */
+  opacity: 1;
+  /* при наведении появляется градиент */
 }
 
 .img {
@@ -306,46 +335,46 @@ margin-top: 35px;
   border-radius: 20px;
 }
 
-.main_img2{
+.main_img2 {
   margin-top: -200px;
   margin-left: 200px;
-  position: relative; 
-  z-index: 1; 
+  position: relative;
+  z-index: 1;
 }
 
-.games_texts{
-text-align: center;
-margin-top: 150px;
+.games_texts {
+  text-align: center;
+  margin-top: 150px;
 }
 
-.Our_games{
-font-family: 'Abril Fatface', sans-serif;
-font-size: 50px;
+.Our_games {
+  font-family: 'Abril Fatface', sans-serif;
+  font-size: 50px;
 }
 
-.game_text{
-width: 711px;
-max-width: 100%; 
-line-height: 1.7em;
-overflow-wrap: break-word; 
-font-size: 18px;
-font-family: 'Abril Fatface', sans-serif;
-margin-top: 15px;
+.game_text {
+  width: 711px;
+  max-width: 100%;
+  line-height: 1.7em;
+  overflow-wrap: break-word;
+  font-size: 18px;
+  font-family: 'Abril Fatface', sans-serif;
+  margin-top: 15px;
 }
 
-.main_Kipon_box{
+.main_Kipon_box {
   width: 390px;
-  height:381px ;
+  height: 381px;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 7.07px 7.07px 10px 0px rgba(237, 75, 64, 0.1);
 }
 
-.main_Kipon{
-display: flex;
+.main_Kipon {
+  display: flex;
 }
 
-.main_Kipon_box_img{
+.main_Kipon_box_img {
   margin-left: 50px;
   margin-top: 50px;
   border-radius: 20px;
@@ -353,40 +382,40 @@ display: flex;
   box-shadow: 7.07px 7.07px 10px 0px rgba(237, 75, 64, 0.1);
 }
 
-.main_Kipon_box_h1{
+.main_Kipon_box_h1 {
   margin-right: 100px;
   margin-top: 65px;
   font-family: 'Abril Fatface', sans-serif;
   font-size: 20px;
 }
 
-.main_Kipon_box_text{
+.main_Kipon_box_text {
   margin-right: 100px;
 }
 
-.main_Kipon_box_second_text{
+.main_Kipon_box_second_text {
   margin-top: 50px;
   margin-right: 50px;
   margin-left: 50px;
   text-align: left;
-  width: 280Fpx;
-  max-width: 100%; 
+  width: 280px;
+  max-width: 100%;
   line-height: 1.5em;
 }
 
-.main_Robotrix_box{
+.main_Robotrix_box {
   width: 390px;
-  height:381px ;
+  height: 381px;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 7.07px 7.07px 10px 0px rgba(237, 75, 64, 0.1);
 }
 
-.main_Robotrix{
+.main_Robotrix {
   display: flex;
 }
 
-.main_Robotrix_box_img{
+.main_Robotrix_box_img {
   margin-left: 50px;
   margin-top: 50px;
   border-radius: 20px;
@@ -394,40 +423,40 @@ display: flex;
   box-shadow: 7.07px 7.07px 10px 0px rgba(237, 75, 64, 0.1);
 }
 
-.main_Robotrix_box_h1{
+.main_Robotrix_box_h1 {
   margin-right: 100px;
   margin-top: 65px;
   font-family: 'Abril Fatface', sans-serif;
   font-size: 20px;
 }
 
-.main_Robotrix_box_text{
+.main_Robotrix_box_text {
   margin-right: 100px;
 }
 
-.main_Robotrix_box_second_text{
+.main_Robotrix_box_second_text {
   margin-top: 50px;
   margin-right: 50px;
   margin-left: 50px;
   text-align: left;
   width: 280Fpx;
-  max-width: 100%; 
+  max-width: 100%;
   line-height: 1.5em;
 }
 
-.main_Treasure_box{
+.main_Treasure_box {
   width: 390px;
-  height:381px ;
+  height: 381px;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 7.07px 7.07px 10px 0px rgba(237, 75, 64, 0.1);
 }
 
-.main_Treasure{
+.main_Treasure {
   display: flex;
 }
 
-.main_Treasure_box_img{
+.main_Treasure_box_img {
   margin-left: 50px;
   margin-top: 50px;
   border-radius: 20px;
@@ -435,31 +464,31 @@ display: flex;
   box-shadow: 7.07px 7.07px 10px 0px rgba(237, 75, 64, 0.1);
 }
 
-.main_Treasure_box_h1{
+.main_Treasure_box_h1 {
   margin-right: 100px;
   margin-top: 65px;
   font-family: 'Abril Fatface', sans-serif;
   font-size: 20px;
 }
 
-.main_Treasure_box_text{
+.main_Treasure_box_text {
   margin-right: 100px;
 }
 
-.main_Treasure_box_second_text{
+.main_Treasure_box_second_text {
   margin-top: 50px;
   margin-right: 50px;
   margin-left: 50px;
   text-align: left;
   width: 280Fpx;
-  max-width: 100%; 
+  max-width: 100%;
   line-height: 1.5em;
 }
 
-.main_Kipon_Robotrix{
+.main_Kipon_Robotrix {
   display: flex;
 }
 
-.main_Treasure_img{
+.main_Treasure_img {
   display: flex;
 }
